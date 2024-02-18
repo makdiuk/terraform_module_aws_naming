@@ -44,11 +44,11 @@ variable "tags" {
 #----------------------------------- Specified -----------------------------------
 # Location list and its assertion  
 # The short location set according to name conventions.
-variable "short_location_names" {
+variable "short_region_names" {
   type = map(any)
   default = {
-    "us-east-2" = "use2"
-    "us-west-2" = "usw2"
+    "west-us-2" = "wus2"
+    "east-us-2" = "usw2"
   }
 }
 
