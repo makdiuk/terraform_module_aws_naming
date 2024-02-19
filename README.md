@@ -1,12 +1,12 @@
-# module-azure-naming
+# module-aws-naming
 
 Terraform module to build proper naming based on naming and tagging convention.
 
 ## Usage
 
 ```HCL
-module "azure_naming" {
-  source      = ".././modules/module-azure-naming"
+module "aws_naming" {
+  source      = ".././modules/module-aws-naming"
   solution    = "organization_name"
   environment = "dev"
   location    = "westus"

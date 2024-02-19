@@ -66,6 +66,7 @@ output "tags" {
       "Environment" = null_resource.label.triggers.environment,
       "Region"      = null_resource.label.triggers.region,
       "Alteration"  = null_resource.label.triggers.alteration,
+      "Terarform"   = "true"
       #"Creation"    = null_resource.label.triggers.created
     }), var.tags
   )
