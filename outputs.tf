@@ -8,14 +8,14 @@ output "short_name" {
   description = "Short version. Lowercased Solution, Environment, Location, Alteration name"
 }
 
-output "function_name" {
+output "service_name" {
   value       = null_resource.label.triggers.function_name
-  description = "Lowercased Solution, Function, Environment, Location, Alteration name splatted by dash."
+  description = "Lowercased Solution, Service, Environment, Location, Alteration name splatted by dash."
 }
 
-output "short_function_name" {
+output "short_service_name" {
   value       = null_resource.label.triggers.short_function_name
-  description = "Short version. Lowercased Solution, Function, Environment, Location, Alteration name"
+  description = "Short version. Lowercased Solution, Service, Environment, Location, Alteration name"
 }
 
 output "environment" {
@@ -38,9 +38,9 @@ output "short_solution" {
   description = "Lowercased short solution."
 }
 
-output "function" {
+output "service" {
   value       = null_resource.label.triggers.function
-  description = "Lowercased function."
+  description = "Lowercased service."
 }
 
 output "alteration" {
