@@ -9,12 +9,12 @@ output "short_name" {
 }
 
 output "service_name" {
-  value       = null_resource.label.triggers.function_name
+  value       = null_resource.label.triggers.service_name
   description = "Lowercased Solution, Service, Environment, Location, Alteration name splatted by dash."
 }
 
 output "short_service_name" {
-  value       = null_resource.label.triggers.short_function_name
+  value       = null_resource.label.triggers.short_service_name
   description = "Short version. Lowercased Solution, Service, Environment, Location, Alteration name"
 }
 
@@ -39,7 +39,7 @@ output "short_solution" {
 }
 
 output "service" {
-  value       = null_resource.label.triggers.function
+  value       = null_resource.label.triggers.service
   description = "Lowercased service."
 }
 
