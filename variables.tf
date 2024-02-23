@@ -9,8 +9,8 @@ variable "team" {
   type        = string
 }
 
-variable "function" {
-  description = "Function name"
+variable "service" {
+  description = "Service name"
   type        = string
   default     = ""
 }
@@ -48,7 +48,7 @@ variable "short_region_names" {
   type = map(any)
   default = {
     "west-us-2" = "wus2"
-    "east-us-2" = "usw2"
+    "east-us-2" = "eus2"
   }
 }
 
