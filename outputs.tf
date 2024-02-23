@@ -18,6 +18,12 @@ output "short_service_name" {
   description = "Short version. Lowercased Solution, Service, Environment, Location, Alteration name"
 }
 
+output "cluster_name" {
+  value       = null_resource.triggers.cluster_name
+  description = "Service, Cluster, Lowercased Solution, Environment, Location, Alteration name splatted by dash."
+
+}
+
 output "environment" {
   value       = null_resource.label.triggers.environment
   description = "Lowercased environment."
