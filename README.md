@@ -53,27 +53,6 @@ This module creates an null resources with correct short and full naming.
 
 ## Changelog
 
-### v 1.0.0 2020-11-25
+### v 1.0.0 2024-02-25
 
 * Initial version
-
-### v 1.1.0 2021-05-27
-
-* Upgrade to work with Terraform v0.15.x
-  * Change `list()` to `tolist([])` functions
-  * Change `map()` to `tomap([])` functions
-
-### v 1.2.0 2021-10-06
-
-* Upgrade to work with Terraform v1.0.x
-* Upgrade to work with AzureRM provider v2.82.0
-* Move variables from the `main.tf` to the `variables.tf`
-* Remove old variables
-* Add locals.
-  * Locals for autogenerating short solution name from the first and the last character, eg. company -> cy
-* Add full list of Azure US regions into `variables.tf`
-* Upgrade `README.md`
-
-### v 1.3.0 2021-10-06
-
-* Add new predefined environments
