@@ -21,7 +21,6 @@ output "short_service_name" {
 output "cluster_name" {
   value       = null_resource.label.triggers.cluster_name
   description = "Service, Cluster, Lowercased Solution, Environment, Location, Alteration name splatted by dash."
-
 }
 
 output "environment" {
